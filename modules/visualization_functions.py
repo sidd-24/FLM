@@ -1,5 +1,4 @@
 from flwr_datasets.visualization import plot_label_distributions
-# from .autonotebook import tqdm as notebook_tqdm
 
 def showDataDist(partition_name, column):
     """
