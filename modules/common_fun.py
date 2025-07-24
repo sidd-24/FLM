@@ -1,4 +1,6 @@
 from sklearn.preprocessing import OneHotEncoder
+import pandas as pd
+import numpy as np
 
 def show_num_samples_per_client(partitions, number_of_clients):
     for client_id in range(number_of_clients):
@@ -6,20 +8,7 @@ def show_num_samples_per_client(partitions, number_of_clients):
         
         
 def preprocess_data(pdf):
-    """
-    Preprocesses the input pandas DataFrame by:
-    1. Replacing '?' with NaN and dropping rows with NaN values.
-    2. Renaming columns to replace '.' with '_'.
-    3. One-hot encoding specified categorical columns ('workclass', 'occupation', 'native_country', 'income').
-    4. Concatenating the original DataFrame with the one-hot encoded DataFrame.
-    5. Dropping the original categorical columns and other specified columns ('race', 'relationship', 'marital_status', 'fnlwgt', 'education', 'sex').
 
-    Args:
-        pdf (pd.DataFrame): The input pandas DataFrame.
-
-    Returns:
-        pd.DataFrame: The preprocessed pandas DataFrame.
-    """    
     pdf.replace("?", np.nan, inplace=True)
     pdf = pdf.dropna()
     
