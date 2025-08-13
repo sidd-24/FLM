@@ -57,8 +57,7 @@ To replicate the experiments, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/sidd-24/FLM.git](https://github.com/sidd-24/FLM.git)
-    cd FLM
+    git clone https://github.com/sidd-24/FLM.git
     ```
 
 2.  **Set up the environment:**
@@ -66,7 +65,6 @@ To replicate the experiments, follow these steps:
     ```bash
     pip install -r requirements.txt
     ```
-    *(Note: You will need to create a `requirements.txt` file containing libraries like `flwr`, `torch`, `pandas`, `numpy`, `scikit-learn`, `matplotlib`)*
 
 3.  **Run the experiments:**
     * For the **centralized baseline**, run the `experiment_pytorch.ipynb` notebook.
