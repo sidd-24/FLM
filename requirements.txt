@@ -1,0 +1,7 @@
+pandas
+numpy
+flwr[simulation]
+flwr_datasets
+scikit-learn
+torch
+matplotlib
