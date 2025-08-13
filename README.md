@@ -3,7 +3,26 @@
 This project explores the impact of different federated learning (FL) strategies on model performance, specifically in a setting with non-identically distributed (non-IID) data. It compares a centralized PyTorch model with synchronous (FedProx) and asynchronous (FedAsync) aggregation methods to analyze their stability and effectiveness.
 
 ---
+# 📂 Repository Structure
 
+```
+FLM/
+│
+├── notebooks/
+│   ├── experiment_pytorch.ipynb
+│   └── experiment_non-iid_pytorch.ipynb
+│
+├── src/
+│   └── common_fun.py
+│
+├── docs/
+│   └── FLM_PPT_Draft.pptx.pdf
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
+---
 ## 📊 Dataset: Adult Census Income
 
 The project uses the **Adult Census Income** dataset to predict whether an individual's income exceeds $50,000 per year.
