@@ -69,3 +69,15 @@ To replicate the experiments, follow these steps:
 3.  **Run the experiments:**
     * For the **centralized baseline**, run the `experiment_pytorch.ipynb` notebook.
     * For the **federated learning experiments**, run the `experiment_non-iid_pytorch.ipynb` notebook. You can modify the `IID_SENARIO` and strategy selection within the notebook to test different configurations.
+
+---
+
+## 🙌 Acknowledgments
+
+
+This project was developed as part of the Federated Learning Management course at **Friedrich-Alexander-Universität Erlangen-Nürnberg**, under the supervision of Prof. Kristina Müller.
+
+---
+
+Authors: Prem Prakash Singh, Siddhant Chindhe, Pratiksha Katap
+
